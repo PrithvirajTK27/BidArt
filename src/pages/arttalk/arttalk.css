@@ -1,0 +1,71 @@
+.artContainer {
+	position:relative;
+	display: flex;
+	width: 100%;
+	top:100px;
+}
+.menubar {
+	left: 45%;
+	width: 116px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	z-index: 1;
+}
+
+.lit_menu {
+	width: 116px;
+	float: left;
+}
+
+	.lit_menu p {
+		width: 116px;
+		height: auto;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		background: linear-gradient(to right, #E969A4, #C32BAD, #1DB9C3 );
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
+.App_chat {
+	position: relative;
+	top: 350px;
+}
+
+.rightbarFriend {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.rightbarProfileImgContainer {
+	margin-right: 10px;
+	position: relative;
+}
+
+.rightbarProfileImg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.rightbarOnline {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: limegreen;
+	position: absolute;
+	top: -2px;
+	right: 0;
+	border: 2px solid white;
+}
+
+.rightbarUsername {
+	font-weight: 500;
+}

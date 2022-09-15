@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100');
+
+.Container {
+    background-image: url(../assets/background.svg);
+    position: relative;
+    display: block;
+    width: 100%;
+    background-position: top center;
+}
+.Container_chat {
+    background-image: url(../assets/background_chat.svg);
+    position: relative;
+    display: block;
+    width: 100%;
+    background-position: top center;
+}
+.roundedCorner {
+    top: 30px;
+    width: 150px;
+    height: 50px;
+    right: 40px;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 100;
+    background-color: #1DB9C3;
+    box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
+    border-radius: 25px;
+}
+.logo_pos_chat {
+    align-items: center;
+    text-align: center;
+    padding-top: 6em;
+    justify-content: center;
+    position: relative;
+    transition: all .3s ease .15s;
+    opacity: 1;
+}
+
+.logo_pos_chat_2 {
+    position: fixed;
+    top: 14px;
+    left: 20px;
+    z-index: 1;
+    height: 90px;
+    width: 170px;
+    transition: all .3s ease .15s;
+    opacity: 0;
+}
+.logo_pos_chat_2 img {
+        height: 90px;
+        width: 170px;
+}
+.logo_pos {
+    align-items: center;
+    text-align: center;
+    padding-top: 12em;
+    justify-content: center;
+}
+
+.App-logo {
+    height: 200px;
+    width: 200px;
+}
+.act_cont {
+    margin-left: -25px;
+    width:200px;
+}
+
+.noti {
+    float: left;
+    margin-left:45px;
+}
+.ACC_cont {
+    display: block;
+    background-image: url(../assets/Rectangle.svg);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    align-content: start;
+    align-items: start;
+    text-align: center;
+}
+.signIn {
+    padding-top: 2em;
+}
+
+.acc_ {
+    position: relative;
+    top: 10px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+.footer_body {
+    color: black;
+}
+
+.each_footer {
+    float: left;
+    margin-left: 50px;
+    text-align: left;
+}
+.usbarImg {
+    border-radius: 50%;
+    position:relative;
+    left:25%;
+    top:20px;
+}
+.Dropuser {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    background: linear-gradient( 298deg,#23dfeb,#c32bad);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+}
+.usr_name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    left: 25%;
+    top: 20px;
+    color:#ffffff;
+    position:relative;
+}
+.usrLogoutButton {
+    width: 100px;
+    border: none;
+    position:relative;
+    padding:10px;
+    left:25%;
+    border-radius: 5px;
+    font-weight: 500;
+    top:20px;
+}

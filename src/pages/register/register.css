@@ -1,0 +1,21 @@
+.regBox {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+}
+
+.vl {
+    border-left: 2px solid grey;
+    height: 300px;
+    position: relative;
+    left: 25%;
+}
+.regWrapper {
+    position: relative;
+    display: inline-flex;
+    left: 35%;
+}

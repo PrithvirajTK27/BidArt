@@ -5,7 +5,6 @@ import Sidebr from '../../components/sidebr/Sidebr';
 import Navi from '../../components/navi/Navi';
 import Conversation from "../../components/conversations/Conversation";
 import Message from "../../components/message/Message";
-//import ChatOnline from "../../components/chatOnline/ChatOnline";
 import { useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
@@ -30,6 +29,7 @@ export default function Jabber() {
     const socket = useRef();
     const { user } = useContext(AuthContext);
     const scrollRef = useRef();
+    const [onlineUsers, setOnlineUsers] = useState([]);
 
     useEffect(() => {
         socket.current = io("ws://localhost:8900");
@@ -50,6 +50,11 @@ export default function Jabber() {
 
     useEffect(() => {
         socket.current.emit("addUser", user._id);
+        socket.current.on("getUsers", (users) => {
+            setOnlineUsers(
+                user.followings.filter((f) => users.some((u) => u.userId === f))
+            );
+        });
     }, [user]);
 
     useEffect(() => {

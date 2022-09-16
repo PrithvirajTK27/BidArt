@@ -3,9 +3,13 @@
     "",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\chatOnline",
+    "\\src\\components\\online",
+    "\\src\\components\\rightbar",
     "\\src\\pages",
-    "\\src\\pages\\arttalk"
+    "\\src\\pages\\arttalk",
+    "\\src\\pages\\jabber"
   ],
-  "SelectedNode": "\\src\\pages\\arttalk\\Arttalk.jsx",
+  "SelectedNode": "\\src\\pages\\jabber\\Jabber.jsx",
   "PreviewInSolutionExplorer": false
 }
